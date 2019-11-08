@@ -116,7 +116,7 @@ export default function Main() {
       <footer
         className={isMobileVersion ? classes.footer : classes.footerMobile}
       >
-        Wojtaz productions
+        @Wojtek
       </footer>
     </div>
   );
