@@ -91,7 +91,7 @@ export default function Main() {
       isActive: "false"
     }
   ]);
-  const [currentView, setView] = useState("projects");
+  const [currentView, setView] = useState("main");
   const isMobileVersion = useMediaQuery("(min-width:530px)");
 
   return (
