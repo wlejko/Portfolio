@@ -44,7 +44,7 @@ export default function InfoModal(props: InfoModalProps) {
       </div>
       <div>
         <Typography
-          style={{ textAlign: "center", marginTop: "12px", fontSize: "18px" }}
+          style={{ textAlign: "center", margin: "12px", fontSize: "18px" }}
         >
           {description}
         </Typography>

@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useSpring, animated } from "react-spring";
 import ProjectCard from "../Card/ProjectCard";
-import phone from "../../images/phone.png";
+import paf from "../../images/episodes.jpg";
+import calculatorImg from "../../images/calculato.jpg";
 
 const useStyles = makeStyles({
   root: {
@@ -35,52 +36,17 @@ export default function Projects() {
 
   const [projectList, setProjectList] = useState([
     {
-      image: phone,
+      image: paf,
       description:
-        "hello this is description for this project. I hope you will enjoy watching my project",
-      projectName: "project1"
+        "This is site about Phineas and Ferb and their adventures. You can find here information about characters and episodes.",
+      projectName: "Phineas and Ferb",
+      linkToGit: "https://github.com/wlejko/Phineas-and-Ferb-website"
     },
     {
-      image: phone,
-      description:
-        "hello this is description for this project. I hope you will enjoy watching my project",
-      projectName: "project2"
-    },
-    {
-      image: phone,
-      description:
-        "hello this is description for this project. I hope you will enjoy watching my project",
-      projectName: "project3"
-    },
-    {
-      image: phone,
-      description:
-        "hello this is description for this project. I hope you will enjoy watching my project",
-      projectName: "project4"
-    },
-    {
-      image: phone,
-      description:
-        "hello this is description for this project. I hope you will enjoy watching my project",
-      projectName: "project5"
-    },
-    {
-      image: phone,
-      description:
-        "hello this is description for this project. I hope you will enjoy watching my project",
-      projectName: "project6"
-    },
-    {
-      image: phone,
-      description:
-        "hello this is description for this project. I hope you will enjoy watching my project",
-      projectName: "project7"
-    },
-    {
-      image: phone,
-      description:
-        "hello this is description for this project. I hope you will enjoy watching my project",
-      projectName: "project8"
+      image: calculatorImg,
+      description: "This is simple calculator created in react with hooks",
+      projectName: "Simple calculator",
+      linkToGit: "https://github.com/wlejko/Simple-calculator"
     }
   ]);
 
@@ -103,6 +69,7 @@ export default function Projects() {
                 image={project.image}
                 description={project.description}
                 projectName={project.projectName}
+                linkToGit={project.linkToGit}
               />
             ))}
           </div>
